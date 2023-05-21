@@ -7,6 +7,9 @@
     }
   ],
   "routes": [
+    { "src": "/conversation/api/(.*)", "dest": "/routers/conversation.js" },
+    { "src": "/user/api/(.*)", "dest": "/routers/user.js" },
+    { "src": "/message/api/(.*)", "dest": "/routers/message.js" },
     {
       "src": "/(.*)",
       "dest": "index.js"

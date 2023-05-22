@@ -13,7 +13,7 @@
     },
     {
       "src": "/home/api/(.*)",
-      "dest": "/routers/home/index.js",
+      "dest": "/routers/home.js",
       "methods": ["GET"]
     }
   ]

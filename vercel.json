@@ -8,20 +8,13 @@
   ],
   "routes": [
     {
-      "src": "/home/api/add",
-      "dest": "index.js",
-      "methods": ["GET"],
-      "headers": {
-        "x-vercel-function-cache": "1",
-        "x-vercel-cache": "0"
-      },
-      "continue": true,
-      "status": 200,
-      "timeout": 30
-    },
-    {
       "src": "/(.*)",
       "dest": "index.js"
+    },
+    {
+      "src": "/home/api/(.*)",
+      "dest": "/routers/home/index.js",
+      "methods": ["GET"]
     }
   ]
 }

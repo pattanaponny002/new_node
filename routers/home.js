@@ -5,13 +5,16 @@ const UserNew = require("../models/User");
 const mongoose = require("mongoose");
 
 const dotenv = require("dotenv");
+//oloponnyolo
+//Ponza1234
+
 dotenv.config();
 mongoose
-  .connect(process.env.MONGO_DB_URI || "mongodb://localhost:27017/newTest", {
+  .connect(process.env.MONGO_DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("conntected newTestDB"));
+  .then(() => console.log("conntected newTestDB", process.env.MONGO_DB_URI));
 router.get("/", (req, res) => {
   res.send("hello");
 });

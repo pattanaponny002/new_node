@@ -29,8 +29,8 @@ router.get("/test", (req, res) => {
 // ID: hkg1::p5zfx-1684758148349-b1b8f3952e1f
 router.get("/add", async (req, res) => {
   const result = await UserNew.create({
-    username: "testHomeSuccess",
-    password: "testHomeSuccess",
+    username: "dd",
+    password: "testHomeSuccessx",
   });
   console.log("adding");
 
